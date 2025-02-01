@@ -49,7 +49,7 @@
 
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
-import "./section1.css";
+import "../components/styles.css";
 const data2 = [
   { url: "https://placehold.co/600x400/red/white?text=1" },
   { url: "https://placehold.co/600x400/blue/white?text=2" },
