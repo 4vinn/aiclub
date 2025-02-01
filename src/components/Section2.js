@@ -56,8 +56,9 @@ export default function Section2() {
   };
 
   return (
+    // <div className="h-screen flex items-center justify-center relative">
     <main
-      className="h-screen w-screen overflow-hidden relative"
+      className="h-screen w-screen overflow-hidden relative bg-white"
       onMouseMove={(e) => {
         manageMouseMove(e);
       }}

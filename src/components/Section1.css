@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --bg: #0c0c0c;
   --border: #303030;
   --color: #7e7e7e;
@@ -80,4 +80,10 @@ h1 {
     left: -300px;
     transform: scale(0);
   }
+} */
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
