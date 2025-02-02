@@ -6,7 +6,7 @@ import Section2 from "./components/Section2";
 function App() {
   return (
     <>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden bg-[#121212]">
         <Section1 />
         <Section2 />
       </div>

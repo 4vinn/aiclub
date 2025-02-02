@@ -50,48 +50,30 @@
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import "../components/styles.css";
-const data2 = [
-  { url: "https://placehold.co/600x400/red/white?text=1" },
-  { url: "https://placehold.co/600x400/blue/white?text=2" },
-  { url: "https://placehold.co/600x400/orange/white?text=3" },
-  { url: "https://placehold.co/600x400/green/white?text=4" },
-  { url: "https://placehold.co/600x400/pink/white?text=5" },
-  { url: "https://placehold.co/600x400/orange/white?text=6" },
-  { url: "https://placehold.co/600x400/yellow/white?text=7" },
-  { url: "https://placehold.co/600x400/purple/white?text=8" },
-  { url: "https://placehold.co/600x400/green/white?text=9" },
-  { url: "https://placehold.co/600x400/grey/white?text=10" },
-];
+
 const data = [
-  {
-    url: "https://images.unsplash.com/photo-1737157998574-2a75f0c52a09?q=80&w=1924&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    id: 1,
-  },
-  {
-    url: "https://images.unsplash.com/photo-1535911061633-d2516c0023d4?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    id: 2,
-  },
-  {
-    url: "https://images.unsplash.com/photo-1735675376752-2e0fb3de9f69?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    id: 3,
-  },
-  {
-    url: "https://images.unsplash.com/photo-1735287367310-2648443f086f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    id: 4,
-  },
-  { url: "https://placehold.co/600x400/red/white?text=random", id: 5 },
-  { url: "https://placehold.co/600x400/purple/white?text=random", id: 6 },
-  {
-    url: "https://images.unsplash.com/photo-1737229940875-293ed0c4e8af?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    id: 7,
-  },
-  { url: "https://placehold.co/600x400/green/white?text=random", id: 8 },
-  { url: "https://placehold.co/600x400/blue/white?text=random", id: 9 },
-  { url: "https://placehold.co/600x400/white/white?text=random", id: 10 },
-  {
-    url: "https://images.unsplash.com/photo-1737229940875-293ed0c4e8af?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D10",
-    id: 11,
-  },
+  { url: "./photos/1.webp", id: 1 },
+  { url: "./photos/2.webp", id: 2 },
+  { url: "./photos/3.webp", id: 3 },
+  { url: "./photos/4.webp", id: 4 },
+  { url: "./photos/5.webp", id: 5 },
+  { url: "./photos/6.webp", id: 6 },
+  { url: "./photos/7.webp", id: 7 },
+  { url: "./photos/8.webp", id: 8 },
+  { url: "./photos/9.webp", id: 9 },
+  { url: "./photos/10.webp", id: 10 },
+  { url: "./photos/11.webp", id: 11 },
+  { url: "./photos/12.webp", id: 12 },
+  { url: "./photos/13.webp", id: 13 },
+  { url: "./photos/14.webp", id: 14 },
+  { url: "./photos/15.webp", id: 15 },
+  { url: "./photos/16.webp", id: 16 },
+  { url: "./photos/17.webp", id: 17 },
+  { url: "./photos/18.webp", id: 18 },
+  { url: "./photos/19.webp", id: 19 },
+  { url: "./photos/20.webp", id: 20 },
+  { url: "./photos/21.webp", id: 21 },
+  { url: "./photos/22.webp", id: 22 },
 ];
 
 const Section1 = () => {
@@ -265,8 +247,8 @@ const Section1 = () => {
     const targetY = targetRef.current.y;
 
     if (headerRef.current) {
-      const headerRotationX = -mouseRef.current.y * 15;
-      const headerRotationY = mouseRef.current.x * 15;
+      const headerRotationX = -mouseRef.current.y * 25;
+      const headerRotationY = mouseRef.current.x * 25;
       const headerTranslateZ =
         Math.abs(mouseRef.current.x * mouseRef.current.y) * 25;
 
@@ -374,7 +356,7 @@ const Section1 = () => {
 
     rendererRef.current = new THREE.WebGLRenderer({ antialias: true });
     rendererRef.current.setSize(window.innerWidth, window.innerHeight);
-    rendererRef.current.setClearColor(0x000000);
+    rendererRef.current.setClearColor(0x121212);
 
     containerRef.current.appendChild(rendererRef.current.domElement);
 
@@ -423,9 +405,9 @@ const Section1 = () => {
   }, []);
 
   return (
-    <div className="h-screen flex items-center justify-center relative bg-red-50">
-      <nav className="fixed top-0 left-0 w-full p-8 flex justify-center z-20">
-        <p className="uppercase font-medium text-xs p-1 bg-white rounded-full px-5 py-2 border-[1px] border-black">
+    <div className="h-screen flex items-center justify-center relative">
+      <nav className="fixed top-0 left-0 w-full p-8 flex justify-center z-50">
+        <p className="uppercase text-white font-medium text-xs p-1 bg-black/30 backdrop-blur-lg rounded-full px-6 py-3 border-[1px] border-[#898989]">
           Menu
         </p>
       </nav>
@@ -433,7 +415,7 @@ const Section1 = () => {
         ref={headerRef}
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center perspective-1000 will-change-transform z-20"
       >
-        <h1 className="uppercase font-bold text-[7.5vw] tracking-tight leading-none transform-gpu backface-hidden select-none text-white">
+        <h1 className="uppercase font-poppins drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-[13vw] font-bold md:text-[7.5vw] tracking-tight leading-none transform-gpu backface-hidden select-none text-white">
           Ai Club
         </h1>
       </div>

@@ -26,6 +26,12 @@ module.exports = {
           },
         },
       },
+      fontFamily: {
+        title: ["Sixtyfour Convergence", "serif"],
+        oxygen: ["Oxygen", "serif"],
+        yatra: ["Yatra One", "serif"],
+        poppins: ["Poppins", "serif"],
+      },
     },
   },
   plugins: [],
