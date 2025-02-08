@@ -1,16 +1,20 @@
-import logo from "./logo.svg";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Section1 from "./components/Section1";
-import Section2 from "./components/Section2";
+import Homepage from "./pages/Homepage";
+import Contact from "./pages/Contact";
+import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/scrollToTop";
 
 function App() {
   return (
-    <>
-      <div className="overflow-hidden bg-[#121212]">
-        <Section1 />
-        <Section2 />
-      </div>
-    </>
+    <Router>
+      <ScrollToTop />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 

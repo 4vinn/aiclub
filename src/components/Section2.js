@@ -68,19 +68,19 @@ export default function Section2() {
           src="./photos/20.webp"
           alt="image"
           // width={300}
-          className="absolute w-[220px] md:w-[300px] left-[70%] md:left-[75%] top-[50%] md:top-[50%] rounded-2xl"
+          className="absolute w-[220px] md:w-[300px] left-[70%] md:left-[75%] top-[55%] md:top-[50%] rounded-2xl"
         />
         <img
           src="./photos/6.webp"
           alt="image"
           // width={300}
-          className="absolute w-[300px] md:w-[300px] left-[60%] md:left-[5%] top-[75%] md:top-[65%] rounded-2xl"
+          className="absolute w-[250px] md:w-[300px] left-[60%] md:left-[5%] top-[75%] md:top-[65%] rounded-2xl"
         />
         <img
           src="./photos/10.webp"
           alt="image"
           // width={225}
-          className="absolute w-[200px] md:w-[225px] left-[20%] md:left-[30%] -top-[8%] rounded-2xl"
+          className="absolute w-[150px] md:w-[225px] left-[5%] md:left-[30%] -top-[8%] rounded-2xl"
         />
       </div>
 
@@ -89,7 +89,7 @@ export default function Section2() {
           src="./photos/8.webp"
           alt="image"
           // width={400}
-          className="absolute w-[300px] md:w-[400px] -left-[4%] md:left-[1%] top-[18%] md:top-[13%] rounded-2xl"
+          className="absolute w-[250px] md:w-[400px] -left-[4%] md:left-[1%] top-[18%] md:top-[13%] rounded-2xl"
         />
         <img
           src="./photos/22.webp"
@@ -101,7 +101,7 @@ export default function Section2() {
           src="./photos/1.webp"
           alt="image"
           // width={325}
-          className="absolute w-[300px] md:w-[325px] left-[6%] md:left-[50%] top-[75%] md:top-[63%] rounded-2xl"
+          className="absolute w-[250px] md:w-[325px] -left-[5%] md:left-[50%] top-[80%] md:top-[63%] rounded-2xl"
         />
       </div>
 
@@ -116,13 +116,13 @@ export default function Section2() {
           src="./photos/11.webp"
           alt="image"
           // width={200}
-          className="absolute w-[200px] md:w-[200px] md:left-[30%] top-[55%] md:top-[64%] rounded-2xl"
+          className="absolute w-[150px] md:w-[200px] md:left-[30%] top-[60%] md:top-[64%] rounded-2xl"
         />
       </div>
 
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-        <h1 className="text-black font-normal text-4xl">
-          A Home for AI Pioneers.
+        <h1 className="text-black font-normal text-4xl font-inter">
+          Club for AI pioneers
         </h1>
         {/* <p className="text-[#676767] mt-2">Some text</p> */}
       </div>

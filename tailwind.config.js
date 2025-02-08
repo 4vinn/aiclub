@@ -31,6 +31,7 @@ module.exports = {
         oxygen: ["Oxygen", "serif"],
         yatra: ["Yatra One", "serif"],
         poppins: ["Poppins", "serif"],
+        inter: ["Inter", "serif"],
       },
     },
   },

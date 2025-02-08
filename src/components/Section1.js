@@ -406,17 +406,17 @@ const Section1 = () => {
 
   return (
     <div className="h-screen flex items-center justify-center relative">
-      <nav className="fixed top-0 left-0 w-full p-8 flex justify-center z-50">
-        <p className="uppercase text-white font-medium text-xs p-1 bg-black/30 backdrop-blur-lg rounded-full px-6 py-3 border-[1px] border-[#898989]">
+      {/* <nav className="fixed top-0 left-0 w-full p-8 flex justify-center z-50">
+        <p className="uppercase text-white font-inter font-medium text-sm p-1 bg-black/30 backdrop-blur-lg rounded-full px-6 py-3 border-[2px] border-[#a4a4a4]">
           Menu
         </p>
-      </nav>
+      </nav> */}
       <div
         ref={headerRef}
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center perspective-1000 will-change-transform z-20"
       >
-        <h1 className="uppercase font-poppins drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-[13vw] font-bold md:text-[7.5vw] tracking-tight leading-none transform-gpu backface-hidden select-none text-white">
-          Ai Club
+        <h1 className=" font-poppins drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-[13vw] font-bold md:text-[7.5vw] tracking-tight leading-none transform-gpu backface-hidden select-none text-white">
+          &gt;&gt;aiclub&lt;&lt;
         </h1>
       </div>
       <div ref={containerRef} className="absolute inset-0" />
